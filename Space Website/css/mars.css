@@ -1,0 +1,27 @@
+#showcase{
+    background:url('../images/mars.jpg') no-repeat center;
+}
+#showcase .container{
+  width: 40%;
+  margin-top: 70px;
+  float: left;
+  margin-left: 10%;
+}
+#showcase p{
+  margin-top: 60px;
+}
+iframe{
+  margin-top: 60px;
+}
+@media (max-width:1000px) {
+  #showcase .container{
+    width: 80%;
+    float: none;
+    margin-left:none;
+  }
+  #showcase p{
+    width: 80%;
+    margin:auto;
+    margin-top: 70px;
+  }
+}

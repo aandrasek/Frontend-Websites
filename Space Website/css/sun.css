@@ -1,0 +1,28 @@
+#showcase{
+    background:url('../images/sun.jpg') no-repeat center;
+}
+#showcase .container{
+  width: 40%;
+  margin-top: 70px;
+  float: right;
+  margin-right: 10%;
+}
+#showcase p{
+  margin-top: 60px;
+}
+iframe{
+  margin-top: 60px;
+}
+@media (max-width:1000px) {
+  #showcase .container{
+    width: 100%;
+    float: none;
+    margin-right:none;
+  }
+  #showcase p{
+    width: 80%;
+    margin:auto;
+    margin-top: 70px;
+
+  }
+}
