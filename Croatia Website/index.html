@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="All about Croatia">
+    <meta name="keywords" content="croatia, hrvatska, ful of life">
+    <title>Croatia</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1>Croatia</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="javascript:window.scrollBy(0, 1000);">Explore</a></li>
+            <li><a href="javascript:window.scrollBy(0, 1950);">Top Destinations</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+     <div class="container">
+      <h1>Adventure Of A Lifetime</h1>
+     </div>
+    </section>
+
+    <section id="journey">
+     <div class="container">
+      <h1>Start Your Journey</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+     </div>
+    </section>
+
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <img src="./images/compass-icon.png" alt="Compass icon">
+          <h3>Guides</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="box">
+          <img src="./images/location-icon.png" alt="Compass icon">
+          <h3>Adventures</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="box">
+          <img src="./images/camp-icon.png" alt="Compass icon">
+          <h3>Camping</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations">
+      <div class="container">
+        <h1>Top Destinations In Croatia</h1>
+      </div>
+      <div id="slideshow">
+        <div class="slideImage">
+          <img src="images/dubrovnik.jpg" alt="dubrovnik image">
+          <h1>Dubrovnik</h1>
+        </div>
+        <div class="slideImage">
+          <img src="images/split.jpg" alt="split image">
+          <h1>Split</h1>
+        </div>
+        <div class="slideImage">
+          <img src="images/plitvice-lakes.jpg" alt="plitvice lakes image">
+          <h1>Plitvice Lakes</h1>
+        </div>
+        <div class="slideImage">
+          <img src="images/zagreb.jpg" alt="zagreb image">
+          <h1>Zagreb</h1>
+        </div>
+        <button class="leftButton" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="rightButton" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+    </section>
+
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2917793.24854299!2d14.163962692664969!3d44.4248032827375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133441080add95ed%3A0xa0f3c024e1661b7f!2sHrvatska!5e0!3m2!1shr!2shr!4v1531258567238" width="100%" height="800" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    <footer>
+      <p>Antonio Andrasek. Copyright &copy; 2018.</p>
+    </footer>
+
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("slideImage");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+    </script>
+
+  </body>
+</html>

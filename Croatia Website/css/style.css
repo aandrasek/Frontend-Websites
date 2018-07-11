@@ -1,0 +1,206 @@
+body{
+font-family: Helvetica,Arial,sans-serif;
+padding: 0;
+margin:0;
+background-color: #fff;
+background:url('../images/split.jpg') no-repeat center top;
+}
+
+/*Global*/
+ @font-face { font-family:Domestic_Manners; src: url('../Domestic_Manners.ttf'); }
+.container{
+width: 60%;
+margin: auto;
+overflow: hidden;
+}
+ul{
+margin:0;
+padding: 0;
+}
+
+/*Header*/
+header{
+padding-top: :30px;
+}
+header a{
+color: #fff;
+font-weight: 800;
+font-size: 15px;
+text-decoration: none;
+text-transform: uppercase;
+}
+header a:hover{
+color: #11517f;
+}
+header li{
+float: left;
+display: inline;
+padding: 0 30px 0 30px;
+}
+header nav{
+float: right;
+margin-top: 40px;
+}
+header #branding{
+  float: left;
+}
+header #branding h1{
+  font-family: Domestic_Manners;
+  color: #fff;
+  text-transform: uppercase;
+}
+/*Showcase*/
+#showcase{
+  min-height: 900px;
+  color: #fff;
+  text-align:center;
+}
+#showcase h1{
+font-family: Domestic_Manners;
+margin-top: 320px;
+font-size: 55px;
+margin-bottom: 15px;
+}
+/*Journey*/
+#journey{
+  padding-top: 110px;
+  padding-bottom: 150px;
+  background-color:#11517f;
+  text-align: center;
+  color: #fff;
+}
+#journey h1{
+  font-size: 27px;
+  text-transform: uppercase;
+  padding-bottom: 60px;
+  margin-bottom: 40px;
+  border-bottom: 2px #fff solid;
+}
+#journey p{
+font-size: 25px;
+}
+
+/*Boxes*/
+#boxes{
+margin-top: 120px;
+margin-bottom: 120px;
+color:#11517f;
+}
+#boxes .container{
+  text-align: center;
+}
+#boxes .box{
+float: left;
+width: 30%;
+padding: 10px;
+text-align: center;
+}
+#boxes .box img{
+  width: 50px;
+  height: auto;
+}
+/*Destinations*/
+#destinations {
+  margin-top: 40px;
+}
+#destinations h1{
+  font-size: 35px;
+  text-align: center;
+  font-family: Domestic_Manners;
+  color:#11517f;
+}
+#destinations img{
+  width: 100%;
+  height: 700px;
+object-fit: cover;
+}
+#destinations button{
+  background-color: #fff;
+    border: none;
+    color: #11517f;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+#destinations .leftButton{
+position: relative;
+bottom:450px;
+float: left;
+}
+#destinations .rightButton{
+position: relative;
+bottom:450px;
+float: right;
+}
+#destinations #slideshow h1{
+background-color: #fff;
+color:#11517f;
+width: 20%;
+margin: auto;
+position: relative;
+bottom: 62px;
+border-bottom: 2px solid #11517f;
+}
+
+/*Footer*/
+Footer{
+  background-color: #11517f;
+  color: #fff;
+  padding: 20px;
+  text-align:center;
+}
+
+/*Media Queries*/
+@media (max-width:1000px) {
+  header #branding,header nav,header nav li{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  header{
+    padding-bottom: 20px;
+  }
+  header .container{
+width: 100%;
+  }
+  header a{
+font-size: 20px;
+padding: 2px;
+
+  }
+  #showcase h1{
+    margin-top: 120px;
+  }
+  #showcase{
+min-height: 700px;
+  }
+  #journey{
+    padding: 0;
+    padding-top: 20px;
+  }
+  #journey h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #journey p{
+    padding-bottom: 40px;
+    font-size: 20px
+  }
+  #boxes{
+    padding: 0;
+    margin: 0;
+    padding-top: 40px;
+  }
+  #boxes .box{
+    width: 100%;
+  }
+  #destinations{
+    margin: 0;
+  }
+  #destinations #slideshow h1{
+    width: 50%;
+  }
+
+}
